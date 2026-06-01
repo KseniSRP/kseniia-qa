@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,7 +85,8 @@ nav{
 .exp-blk::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--grass);transform:scaleX(0);transform-origin:left;transition:transform .3s;}
 .exp-blk:hover{transform:translateY(-4px);}
 .exp-blk:hover::after{transform:scaleX(1);}
-.blk-ico{font-size:26px;margin-bottom:14px;display:block;}
+.blk-ico{margin-bottom:14px;display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;background:#1A2530;border:2px solid #3A4A5A;border-bottom:4px solid #0A1520;border-right:4px solid #0A1520;box-shadow:inset 2px 2px 0 rgba(255,255,255,.05);} 
+.blk-ico svg{width:38px;height:38px;display:block;image-rendering:pixelated;shape-rendering:crispEdges;}
 .blk-ttl{font-family:'Press Start 2P',monospace;font-size:9px;color:var(--text);margin-bottom:10px;line-height:1.8;text-shadow:1px 1px 0 rgba(0,0,0,.4);}
 .blk-dsc{font-size:17px;line-height:1.65;color:var(--text-mid);}
 
@@ -219,7 +221,8 @@ nav{
 .ct-links{display:flex;flex-direction:column;gap:10px;}
 .ct-link{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--text);font-size:18px;background:#1A2530;border:2px solid #2A3A4A;border-bottom:3px solid #0A1520;border-right:3px solid #0A1520;padding:13px 18px;transition:all .15s;}
 .ct-link:hover{background:#243440;color:var(--diamond);transform:translateX(4px);}
-.ct-ico{width:32px;height:32px;background:#2A3A4A;border:1px solid #3A4A5A;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;}
+.ct-ico{width:36px;height:36px;background:#2A3A4A;border:2px solid #3A4A5A;border-bottom:3px solid #0A1520;border-right:3px solid #0A1520;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;}
+.ct-ico svg{width:24px;height:24px;display:block;image-rendering:pixelated;shape-rendering:crispEdges;}
 
 /* FOOTER */
 footer{background:var(--bg);border-top:4px solid #0A1020;padding:20px 60px;display:flex;justify-content:space-between;align-items:center;}
@@ -266,15 +269,19 @@ footer p{font-family:'Press Start 2P',monospace;font-size:7px;color:var(--text-d
     <div class="hero-tag"><div class="blink"></div>AVAILABLE FOR NEW QUEST</div>
     <h1 class="hero-name">KSENIIA<br><span class="acc">SERIAPINA</span></h1>
     <p class="hero-title">▶ LEAD QA ENGINEER</p>
-   <p class="hero-desc">
-  14 years of commercial experience in testing web, mobile, and backend products across e-commerce, fintech, SaaS, and betting/gaming domains.<br>
-  Experienced in the full release cycle: from requirements analysis and test strategy to regression, smoke, production release, and post-release monitoring.<br>
-  QA Lead / QA Team Lead experience: building QA processes, task distribution, release quality control, test documentation, and test automation strategy.
-</p>
+
+    <p class="hero-desc">
+      14 years of commercial experience in testing web, mobile, and backend products across e-commerce, fintech, SaaS, and betting/gaming domains.<br>
+      Experienced in the full release cycle: from requirements analysis and test strategy to regression, smoke, production release, and post-release monitoring.<br>
+      QA Lead / QA Team Lead experience: building QA processes, task distribution, release quality control, test documentation, and test coverage strategy.
+    </p>
+
+    <div class="hero-stats">
       <div class="stat-slot"><span class="stat-num">14</span><span class="stat-lbl">Years XP</span></div>
-      <div class="stat-slot"><span class="stat-num">8</span><span class="stat-lbl">Team Size</span></div>
+      <div class="stat-slot"><span class="stat-num">QA</span><span class="stat-lbl">Lead</span></div>
       <div class="stat-slot"><span class="stat-num">ISTQB</span><span class="stat-lbl">Certified</span></div>
     </div>
+
     <div class="hero-cta">
       <a href="#contact" class="btn-px btn-green">▶ GET IN TOUCH</a>
       <a href="#experience" class="btn-px btn-ghost">VIEW XP LOG →</a>
@@ -289,12 +296,12 @@ footer p{font-family:'Press Start 2P',monospace;font-size:7px;color:var(--text-d
   <div class="sec-tag">Skill Tree</div>
   <h2 class="sec-title">AREAS OF <span class="acc">EXPERTISE</span></h2>
   <div class="exp-grid">
-    <div class="exp-blk fade-up"><span class="blk-ico">🧭</span><h3 class="blk-ttl">QA LEADERSHIP</h3><p class="blk-dsc">Building and scaling QA teams. Hiring, onboarding, mentoring — processes that make quality sustainable.</p></div>
-    <div class="exp-blk fade-up"><span class="blk-ico">⚙️</span><h3 class="blk-ttl">TEST AUTOMATION</h3><p class="blk-dsc">E2E automation with Playwright + Allure TestOps. Reducing regression time while increasing release confidence.</p></div>
-    <div class="exp-blk fade-up"><span class="blk-ico">📱</span><h3 class="blk-ttl">CROSS-PLATFORM</h3><p class="blk-dsc">iOS, Android, Web, Backend, REST APIs — full coverage with deep expertise in mobile and marketplace products.</p></div>
-    <div class="exp-blk fade-up"><span class="blk-ico">🔄</span><h3 class="blk-ttl">PROCESS DESIGN</h3><p class="blk-dsc">Shift-left testing, sprint-based workflows, release management — QA that integrates naturally with engineering.</p></div>
-    <div class="exp-blk fade-up"><span class="blk-ico">📊</span><h3 class="blk-ttl">QA METRICS</h3><p class="blk-dsc">Dashboards, production log analysis, defect root cause — making quality visible to the whole team.</p></div>
-    <div class="exp-blk fade-up"><span class="blk-ico">🛠️</span><h3 class="blk-ttl">TOOLING</h3><p class="blk-dsc">Browser extensions, scripts, Jira workflows, knowledge bases — automating daily QA work.</p></div>
+    <div class="exp-blk fade-up"><span class="blk-ico" aria-hidden="true"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="16" fill="none"/><rect x="7" y="1" width="2" height="2" fill="#FCBF00"/><rect x="7" y="13" width="2" height="2" fill="#FCBF00"/><rect x="1" y="7" width="2" height="2" fill="#FCBF00"/><rect x="13" y="7" width="2" height="2" fill="#FCBF00"/><rect x="3" y="3" width="2" height="2" fill="#FCBF00"/><rect x="11" y="3" width="2" height="2" fill="#62EEF3"/><rect x="3" y="11" width="2" height="2" fill="#E03030"/><rect x="11" y="11" width="2" height="2" fill="#17DD62"/><rect x="6" y="6" width="4" height="4" fill="#E8E4D8"/><rect x="7" y="7" width="2" height="2" fill="#243040"/></svg></span><h3 class="blk-ttl">QA LEADERSHIP</h3><p class="blk-dsc">Building and scaling QA teams. Hiring, onboarding, mentoring — processes that make quality sustainable.</p></div>
+    <div class="exp-blk fade-up"><span class="blk-ico" aria-hidden="true"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="16" fill="none"/><rect x="2" y="6" width="12" height="4" fill="#8B8B8B"/><rect x="4" y="4" width="2" height="2" fill="#8B8B8B"/><rect x="10" y="10" width="2" height="2" fill="#8B8B8B"/><rect x="6" y="2" width="4" height="2" fill="#E03030"/><rect x="6" y="12" width="4" height="2" fill="#E03030"/><rect x="1" y="7" width="2" height="2" fill="#E03030"/><rect x="13" y="7" width="2" height="2" fill="#E03030"/><rect x="6" y="6" width="4" height="4" fill="#FCBF00"/></svg></span><h3 class="blk-ttl">TEST AUTOMATION</h3><p class="blk-dsc">Working with existing automation frameworks, supporting E2E coverage, and building a practical automation strategy around product risks.</p></div>
+    <div class="exp-blk fade-up"><span class="blk-ico" aria-hidden="true"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="16" fill="none"/><rect x="1" y="3" width="8" height="6" fill="#62EEF3"/><rect x="2" y="4" width="6" height="4" fill="#243040"/><rect x="3" y="9" width="4" height="1" fill="#8B8B8B"/><rect x="11" y="2" width="4" height="10" fill="#E8E4D8"/><rect x="12" y="3" width="2" height="8" fill="#243040"/><rect x="12" y="12" width="2" height="2" fill="#8B8B8B"/></svg></span><h3 class="blk-ttl">CROSS-PLATFORM</h3><p class="blk-dsc">iOS, Android, Web, Backend, REST APIs — full coverage with deep expertise in mobile and marketplace products.</p></div>
+    <div class="exp-blk fade-up"><span class="blk-ico" aria-hidden="true"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="16" fill="none"/><rect x="2" y="3" width="8" height="2" fill="#17DD62"/><rect x="8" y="3" width="2" height="6" fill="#17DD62"/><rect x="7" y="8" width="4" height="2" fill="#17DD62"/><rect x="10" y="8" width="2" height="5" fill="#17DD62"/><rect x="6" y="11" width="6" height="2" fill="#17DD62"/><rect x="11" y="2" width="3" height="3" fill="#FCBF00"/><rect x="12" y="11" width="2" height="2" fill="#FCBF00"/></svg></span><h3 class="blk-ttl">PROCESS DESIGN</h3><p class="blk-dsc">Shift-left testing, sprint-based workflows, release management, and coverage strategy — QA that integrates naturally with engineering.</p></div>
+    <div class="exp-blk fade-up"><span class="blk-ico" aria-hidden="true"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="16" fill="none"/><rect x="2" y="10" width="2" height="4" fill="#62EEF3"/><rect x="5" y="8" width="2" height="6" fill="#62EEF3"/><rect x="8" y="5" width="2" height="9" fill="#62EEF3"/><rect x="11" y="3" width="2" height="11" fill="#62EEF3"/><rect x="1" y="13" width="13" height="1" fill="#8B8B8B"/><rect x="10" y="1" width="4" height="2" fill="#FCBF00"/><rect x="12" y="2" width="2" height="2" fill="#FCBF00"/></svg></span><h3 class="blk-ttl">QA METRICS</h3><p class="blk-dsc">Dashboards, production log analysis, defect root cause — making quality visible to the whole team.</p></div>
+    <div class="exp-blk fade-up"><span class="blk-ico" aria-hidden="true"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="16" fill="none"/><rect x="2" y="10" width="8" height="2" fill="#8B8B8B"/><rect x="4" y="8" width="6" height="2" fill="#8B8B8B"/><rect x="8" y="4" width="2" height="4" fill="#8B8B8B"/><rect x="10" y="2" width="3" height="2" fill="#8B8B8B"/><rect x="11" y="4" width="2" height="5" fill="#FCBF00"/><rect x="12" y="9" width="2" height="2" fill="#FCBF00"/><rect x="2" y="3" width="3" height="3" fill="#62EEF3"/><rect x="3" y="4" width="1" height="1" fill="#243040"/></svg></span><h3 class="blk-ttl">TOOLING</h3><p class="blk-dsc">Hands-on experience with Charles, ADB, BrowserStack, DevTools, Postman/Insomnia, GitLab, Kibana/OpenSearch, RabbitMQ, and other QA/debugging tools.</p></div>
   </div>
 </section>
 
@@ -400,14 +407,14 @@ footer p{font-family:'Press Start 2P',monospace;font-size:7px;color:var(--text-d
     <div class="card-hdr-text">
       <div class="card-company">WINLINE</div>
       <div class="card-role">LEAD QA ENGINEER</div>
-      <div class="card-period">July 2024 — Present · Moscow · 2 years</div>
+      <div class="card-period">July 2024 — Present · Moscow</div>
     </div>
     <div class="card-toggle">[-]</div>
   </div>
   <div class="card-body">
     <div class="card-inner">
       <p class="card-desc">Leading a QA team of 8 engineers at a fast-moving product startup. Built QA processes from scratch, scaled the team, and established a predictable bi-weekly release cycle.</p>
-      <ul class="card-ach"><li><span class="blt">■</span>Built onboarding system — team grew from 2 to 8 engineers</li><li><span class="blt">■</span>Embedded QA into SDLC: sprint model, shift-left via grooming, release management</li><li><span class="blt">■</span>Defined automation coverage strategy with Playwright + Allure TestOps</li><li><span class="blt">■</span>Set up QA dashboards: OpenSearch/Kibana, regression tracking, defect root cause</li><li><span class="blt">■</span>Established production incident process (L3 → QA → dev)</li><li><span class="blt">■</span>Built centralised QA knowledge base in Confluence</li></ul>
+      <ul class="card-ach"><li><span class="blt">■</span>Built onboarding system — team grew from 2 to 8 engineers</li><li><span class="blt">■</span>Embedded QA practices into SDLC: early requirements review, shift-left via grooming, risk-based test planning, release scope control, and quality gates</li><li><span class="blt">■</span>Defined E2E coverage strategy and coordinated automation efforts using Playwright and Allure TestOps</li><li><span class="blt">■</span>Set up QA dashboards: OpenSearch/Kibana, regression tracking, defect root cause</li><li><span class="blt">■</span>Established production incident process (L3 → QA → dev)</li><li><span class="blt">■</span>Built centralised QA knowledge base in Confluence</li></ul>
       <div class="stk-lbl">Tech Stack</div>
       <div class="stk-chips"><span class="chip">Playwright</span><span class="chip">Allure TestOps</span><span class="chip">Vue.js</span><span class="chip">Nuxt.js</span><span class="chip">TypeScript</span><span class="chip">Node.js</span><span class="chip">PostgreSQL</span><span class="chip">RabbitMQ</span><span class="chip">Kubernetes</span><span class="chip">Docker</span><span class="chip">OpenSearch</span><span class="chip">Kibana</span><span class="chip">Grafana</span><span class="chip">Sentry</span><span class="chip">Postman</span></div>
     </div>
@@ -538,11 +545,11 @@ footer p{font-family:'Press Start 2P',monospace;font-size:7px;color:var(--text-d
   <div class="sec-tag">Achievements</div>
   <h2 class="sec-title">CERTS & <span class="acc">COURSES</span></h2>
   <div class="cert-grid">
-    <div class="exp-blk fade-up"><span class="blk-ico">🏆</span><h3 class="blk-ttl">ISTQB CTFL</h3><p class="blk-dsc">Certified Tester Foundation Level — ISTQB® · 2018</p></div>
-    <div class="exp-blk fade-up"><span class="blk-ico">☕</span><h3 class="blk-ttl">AUTOMATION IN JAVA</h3><p class="blk-dsc">Test automation with Java, JUnit — Yandex Practicum · 2024</p></div>
-    <div class="exp-blk fade-up"><span class="blk-ico">📨</span><h3 class="blk-ttl">APACHE KAFKA</h3><p class="blk-dsc">Message brokers & event streaming — Stepik · 2024</p></div>
-    <div class="exp-blk fade-up"><span class="blk-ico">📊</span><h3 class="blk-ttl">DATA-DRIVEN PM</h3><p class="blk-dsc">Go Practice Simulator — GoPractice · 2020</p></div>
-    <div class="exp-blk fade-up"><span class="blk-ico">🗣️</span><h3 class="blk-ttl">BIZ COMMUNICATION</h3><p class="blk-dsc">Professional communication — Yandex Practicum · 2021</p></div>
+    <div class="exp-blk fade-up"><span class="blk-ico" aria-hidden="true"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="16" fill="none"/><rect x="4" y="2" width="8" height="2" fill="#FCBF00"/><rect x="3" y="4" width="10" height="5" fill="#FCBF00"/><rect x="2" y="5" width="2" height="3" fill="#8B6A00"/><rect x="12" y="5" width="2" height="3" fill="#8B6A00"/><rect x="6" y="9" width="4" height="2" fill="#FCBF00"/><rect x="5" y="11" width="6" height="2" fill="#8B8B8B"/><rect x="4" y="13" width="8" height="1" fill="#E8E4D8"/></svg></span><h3 class="blk-ttl">ISTQB CTFL</h3><p class="blk-dsc">Certified Tester Foundation Level — ISTQB® · 2018</p></div>
+    <div class="exp-blk fade-up"><span class="blk-ico" aria-hidden="true"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="16" fill="none"/><rect x="4" y="5" width="7" height="6" fill="#E8E4D8"/><rect x="5" y="6" width="5" height="4" fill="#866043"/><rect x="11" y="6" width="2" height="3" fill="#E8E4D8"/><rect x="12" y="7" width="1" height="1" fill="#243040"/><rect x="4" y="12" width="8" height="1" fill="#8B8B8B"/><rect x="5" y="2" width="1" height="2" fill="#62EEF3"/><rect x="8" y="2" width="1" height="2" fill="#62EEF3"/></svg></span><h3 class="blk-ttl">AUTOMATION IN JAVA</h3><p class="blk-dsc">Java automation basics and working with test frameworks — Yandex Practicum · 2024</p></div>
+    <div class="exp-blk fade-up"><span class="blk-ico" aria-hidden="true"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="16" fill="none"/><rect x="2" y="4" width="12" height="8" fill="#E8E4D8"/><rect x="3" y="5" width="10" height="1" fill="#62EEF3"/><rect x="3" y="6" width="2" height="2" fill="#62EEF3"/><rect x="11" y="6" width="2" height="2" fill="#62EEF3"/><rect x="5" y="8" width="6" height="2" fill="#FCBF00"/><rect x="7" y="10" width="2" height="1" fill="#FCBF00"/></svg></span><h3 class="blk-ttl">APACHE KAFKA</h3><p class="blk-dsc">Message brokers & event streaming — Stepik · 2024</p></div>
+    <div class="exp-blk fade-up"><span class="blk-ico" aria-hidden="true"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="16" fill="none"/><rect x="2" y="10" width="2" height="4" fill="#62EEF3"/><rect x="5" y="8" width="2" height="6" fill="#17DD62"/><rect x="8" y="5" width="2" height="9" fill="#FCBF00"/><rect x="11" y="3" width="2" height="11" fill="#E03030"/><rect x="1" y="13" width="13" height="1" fill="#8B8B8B"/></svg></span><h3 class="blk-ttl">DATA-DRIVEN PM</h3><p class="blk-dsc">Go Practice Simulator — GoPractice · 2020</p></div>
+    <div class="exp-blk fade-up"><span class="blk-ico" aria-hidden="true"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="16" fill="none"/><rect x="3" y="3" width="10" height="7" fill="#E8E4D8"/><rect x="4" y="4" width="8" height="5" fill="#243040"/><rect x="5" y="11" width="4" height="2" fill="#E8E4D8"/><rect x="9" y="10" width="2" height="2" fill="#E8E4D8"/><rect x="5" y="6" width="2" height="1" fill="#62EEF3"/><rect x="8" y="6" width="3" height="1" fill="#FCBF00"/></svg></span><h3 class="blk-ttl">BIZ COMMUNICATION</h3><p class="blk-dsc">Professional communication — Yandex Practicum · 2021</p></div>
   </div>
 </section>
 
@@ -557,13 +564,13 @@ footer p{font-family:'Press Start 2P',monospace;font-size:7px;color:var(--text-d
       <div>
         <div class="sec-tag">Let's talk</div>
         <h2 class="sec-title" style="margin-bottom:20px;">OPEN TO <span class="acc">NEW QUESTS</span></h2>
-        <p class="ct-text">Looking for a QA Lead, team builder, or automation specialist? I help teams build quality processes and ship with confidence — from day one.</p>
+        <p class="ct-text">Looking for a QA Lead, team builder? I help teams build quality processes and ship with confidence — from day one.</p>
         <div style="display:inline-flex;align-items:center;gap:10px;font-size:17px;color:var(--emerald);"><div class="blink"></div>AVAILABLE NOW</div>
       </div>
       <div class="ct-links">
-        <a href="mailto:kseriapina@gmail.com" class="ct-link"><div class="ct-ico">✉️</div>kseriapina@gmail.com</a>
-        <a href="https://www.linkedin.com/in/ksenisrp/" class="ct-link" target="_blank"><div class="ct-ico">💼</div>linkedin.com/in/ksenisrp</a>
-        <a href="https://hh.ru" class="ct-link" target="_blank"><div class="ct-ico">📄</div>Full CV on hh.ru</a>
+        <a href="mailto:kseriapina@gmail.com" class="ct-link"><div class="ct-ico" aria-hidden="true"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="16" fill="none"/><rect x="2" y="4" width="12" height="8" fill="#E8E4D8"/><rect x="3" y="5" width="10" height="1" fill="#BFC7CF"/><rect x="3" y="6" width="2" height="2" fill="#BFC7CF"/><rect x="11" y="6" width="2" height="2" fill="#BFC7CF"/><rect x="5" y="7" width="2" height="2" fill="#BFC7CF"/><rect x="9" y="7" width="2" height="2" fill="#BFC7CF"/><rect x="7" y="8" width="2" height="1" fill="#FCBF00"/></svg></div>kseriapina@gmail.com</a>
+        <a href="https://www.linkedin.com/in/ksenisrp/" class="ct-link" target="_blank"><div class="ct-ico" aria-hidden="true"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="16" fill="none"/><rect x="4" y="5" width="8" height="6" fill="#866043"/><rect x="3" y="6" width="10" height="6" fill="#866043"/><rect x="6" y="4" width="4" height="1" fill="#FCBF00"/><rect x="7" y="3" width="2" height="1" fill="#FCBF00"/><rect x="5" y="7" width="1" height="4" fill="#4A3324"/><rect x="10" y="7" width="1" height="4" fill="#4A3324"/><rect x="6" y="8" width="4" height="1" fill="#4A3324"/></svg></div>linkedin.com/in/ksenisrp</a>
+        <a href="https://hh.ru" class="ct-link" target="_blank"><div class="ct-ico" aria-hidden="true"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="16" fill="none"/><rect x="4" y="2" width="7" height="12" fill="#E8E4D8"/><rect x="11" y="4" width="1" height="10" fill="#BFC7CF"/><rect x="10" y="3" width="2" height="2" fill="#BFC7CF"/><rect x="5" y="6" width="5" height="1" fill="#8A9AAA"/><rect x="5" y="8" width="5" height="1" fill="#8A9AAA"/><rect x="5" y="10" width="4" height="1" fill="#8A9AAA"/></svg></div>Full CV on hh.ru</a>
       </div>
     </div>
   </div>
